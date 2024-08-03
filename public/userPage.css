@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: cornflowerblue;
+  height: 50px;
+  font-weight: 500;
+  text-wrap: nowrap;
+  color: white;
+}
+
+.signup {
+  margin-right: 50px;
+  margin-left: auto;
+  right: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(94, 94, 235);
+  color: white;
+  font-size: 15px;
+  border: none;
+  text-decoration: none;
+}
+
+.signup:hover {
+  background-color: rgb(78, 78, 188);
+}
+
+.brandname {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  overflow-y: hidden;
+}
+
+.image-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.user-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 50px;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 50px 0px;
+  font-size: 24px;
+  font-weight: 100;
+  gap: 18px;
+}
+
+.user-card {
+  background-color: rgb(183, 201, 201);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 50px 0px;
+  border-radius: 20px;
+}
+
+.footer {
+  display: block;
+  margin-left: auto;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.main--change-password {
+  display: inline-block;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  background-color: rgb(94, 94, 235);
+  color: white;
+  font-size: 15px;
+  border: none;
+  text-decoration: none;
+}
+
+.main--change-password:hover {
+  background-color: rgb(78, 78, 188);
+}
+
+@media (max-width: 900px) {
+  .user-card {
+    flex-direction: column;
+  }
+}

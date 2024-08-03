@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <a href="/" class="brandname"><h1>Friends Book</h1></a>
+        <a class="signup" href="/signup">Sign Up </a>
+      </div>
+    </nav>
+    <main>
+      <form action="/submit-login" method="post">
+        <div class="login-container">
+          <div class="login-text">Log In</div>
+          <h2>Enter your credentials</h2>
+          <input
+            type="text"
+            name="name"
+            placeholder="username"
+            autocomplete="on"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="your password"
+            autocomplete="on"
+          />
+          <button type="submit">submit</button>
+        </div>
+      </form>
+    </main>
+    <br />
+    <br />
+    <br />
+    <footer><div class="footer">copyrighted © - Hemant Bagaria</div></footer>
+  </body>
+</html>

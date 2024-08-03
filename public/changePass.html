@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Password</title>
+  </head>
+  <body>
+    <h1>Enter Your new Password:</h1>
+    <form
+      class="password_form"
+      action="/password_changed"
+      onsubmit="handleSubmit(event)"
+      method="post"
+    >
+      <input
+        type="text"
+        name="new_password"
+        autocomplete="off"
+        placeholder="New Password"
+        id="password_input"
+      />
+      <button type="submit" onclick="handleSubmit()">Submit</button>
+    </form>
+  </body>
+  <script>
+    function handleSubmit(event) {
+      // Create a URLSearchParams object from the query string
+      const urlParams = new URLSearchParams(window.location.search);
+
+      // Get the value of a specific parameter
+      const user = urlParams.get("user");
+
+      // Update the form action with the new password
+      const form_submit = document.querySelector(".password_form");
+      form_submit.action = `/password_changed?user=${user}`;
+    }
+  </script>
+</html>

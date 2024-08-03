@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: cornflowerblue;
+  height: 50px;
+  font-weight: 500;
+  text-wrap: nowrap;
+  color: white;
+}
+
+.signup {
+  margin-right: 50px;
+  margin-left: auto;
+  right: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(94, 94, 235);
+  color: white;
+  font-size: 15px;
+  border: none;
+  text-decoration: none;
+}
+
+.brandname {
+  text-decoration: none;
+  color: white;
+}
+
+.signup:hover {
+  background-color: rgb(78, 78, 188);
+}
+
+.login-text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.login-container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 50px;
+  background-color: rgb(201, 212, 231);
+  border-radius: 20px;
+}
+
+.login-container * {
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.login-container button {
+  background-color: rgb(94, 94, 235);
+  color: white;
+  font-size: 20px;
+}
+
+.login-container button:hover {
+  background-color: rgb(78, 78, 188);
+}
+
+.login-container h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer {
+  display: block;
+  margin-left: auto;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 20px;
+}
